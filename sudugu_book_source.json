@@ -1,22 +1,52 @@
 [
   {
-    "name": "速读谷",
-    "url": "https://www.sudugu.org/",
-    "charset": "UTF-8",
-    "type": 0,
-    "searchUrl": "https://www.sudugu.org/?s={key}",
-    "bookList": "//div[contains(@class,'post-content')]/ul/li/a|//div[contains(@class,'entry-content')]/p/a",
-    "bookName": "//h1[@class='entry-title']/text()",
-    "bookAuthor": "//div[contains(@class,'post//eta')]/span[contains(@class,'author')]/a/text()",
-    "intro": "//div[contains(@class,'entry-content')]/p[not(contains(@style,'display:none'))]/text()",
-    "chapterList": "//div[contains(@class,'entry-content')]/p/a|//div[contains(@class,'post-content')]/ul/li/a",
-    "chapterContent": "//div[contains(@class,'entry-content')]/p[not(contains(@class,'toc')) and not(contains(@style,'display:none'))]|//div[contains(@class,'post-content')]/p[not(contains(@class,'toc'))]",
-    "nextChapterUrl": "//link[@rel='next']/@href",
+    "bookSourceComment": "速读谷书源\n暂不支持听书、漫画、短剧\n仅支持小说搜索与阅读\n网站地址：https://www.sudugu.org/",
+    "bookSourceGroup": "速读谷,自用书源",
+    "bookSourceName": "速读谷 - 小说阅读",
+    "bookSourceType": 0,
+    "bookSourceUrl": "https://www.sudugu.org/",
+    "customOrder": -1,
+    "enabled": true,
+    "enabledCookieJar": false,
+    "enabledExplore": false,
     "header": "",
-    "cookie": "",
-    "js": "",
-    "enableJs": false,
-    "webViewJs": "",
-    "useWebView": false
+    "jsLib": "",
+    "lastUpdateTime": 1763835000000,
+    "loginUi": "[]",
+    "loginUrl": "// 速读谷无需登录即可访问，暂不配置登录逻辑",
+    "respondTime": 180000,
+    "ruleBookInfo": {
+      "author": "//div[contains(@class,'post//eta')]/span[contains(@class,'author')]/a/text()",
+      "coverUrl": "",
+      "init": "",
+      "intro": "//div[contains(@class,'entry-content')]/p[not(contains(@style,'display:none'))]/text()",
+      "kind": "",
+      "lastChapter": "",
+      "name": "//h1[@class='entry-title']/text()",
+      "tocUrl": "//div[contains(@class,'entry-content')]/p/a/@href|//div[contains(@class,'post-content')]/ul/li/a/@href",
+      "wordCount": ""
+    },
+    "ruleContent": {
+      "content": "//div[contains(@class,'entry-content')]/p[not(contains(@class,'toc')) and not(contains(@style,'display:none'))]|//div[contains(@class,'post-content')]/p[not(contains(@class,'toc'))]",
+      "title": "//h1[@class='entry-title']/text()"
+    },
+    "ruleSearch": {
+      "author": "//div[contains(@class,'post//eta')]/span[contains(@class,'author')]/a/text()",
+      "bookList": "//div[contains(@class,'post-content')]/ul/li/a|//div[contains(@class,'entry-content')]/p/a",
+      "bookUrl": "./@href",
+      "coverUrl": "",
+      "intro": "//div[contains(@class,'entry-content')]/p[not(contains(@style,'display:none'))]/text()",
+      "kind": "",
+      "lastChapter": "",
+      "name": "//a/text()",
+      "wordCount": ""
+    },
+    "ruleToc": {
+      "chapterList": "//div[contains(@class,'entry-content')]/p/a|//div[contains(@class,'post-content')]/ul/li/a",
+      "chapterName": "//a/text()",
+      "chapterUrl": "./@href"
+    },
+    "searchUrl": "https://www.sudugu.org/?s={key}",
+    "weight": 0
   }
 ]
