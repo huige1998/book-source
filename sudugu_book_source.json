@@ -1,0 +1,20 @@
+{
+  "name": "速读谷",
+  "url": "https://www.sudugu.org/",
+  "charset": "UTF-8",
+  "type": 0,
+  "searchUrl": "https://www.sudugu.org/?s={key}",
+  "bookList": "//div[contains(@class,'post-content')]/ul/li/a|//div[contains(@class,'entry-content')]/p/a",
+  "bookName": "//h1[@class='entry-title']/text()",
+  "bookAuthor": "//div[contains(@class,'post-meta')]/span[contains(@class,'author')]/a/text()",
+  "intro": "//div[contains(@class,'entry-content')]/p[not(contains(@style,'display:none'))]/text()",
+  "chapterList": "//div[contains(@class,'entry-content')]/p/a|//div[contains(@class,'post-content')]/ul/li/a",
+  "chapterContent": "//div[contains(@class,'entry-content')]/p[not(contains(@class,'toc')) and not(contains(@style,'display:none'))]|//div[contains(@class,'post-content')]/p[not(contains(@class,'toc'))]",
+  "nextChapterUrl": "//link[@rel='next']/@href",
+  "header": "",
+  "cookie": "",
+  "js": "",
+  "enableJs": false,
+  "webViewJs": "",
+  "useWebView": false
+}
